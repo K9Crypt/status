@@ -1,0 +1,5 @@
+.vercel
+node_modules
+bun.lock
+.svelte-kit
+.DS_Store
