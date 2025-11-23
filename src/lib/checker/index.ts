@@ -41,7 +41,7 @@ class Monitor {
             const controller = new AbortController();
             const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT);
             
-            await fetch(`/api/check`, {
+            const response = await fetch(`/api/check`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -51,7 +51,10 @@ class Monitor {
             });
             
             clearTimeout(timeout);
-            return { up: true, latency: Math.round(performance.now() - start) };
+            
+            // only HTTP 200 means the site is up
+            const up = response.status === 200;
+            return { up, latency: Math.round(performance.now() - start) };
         } catch {
             return { up: false, latency: Math.round(performance.now() - start) };
         }

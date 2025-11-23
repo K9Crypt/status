@@ -4,7 +4,7 @@
 	import { type VariantProps, tv } from "tailwind-variants";
 
 	export const buttonVariants = tv({
-		base: "aria-invalid:border-destructive inline-flex text-sm shrink-0 items-center justify-center rounded gap-2 whitespace-nowrap font-medium outline-none transition-all disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 hover:cursor-pointer disabled:cursor-not-allowed",
+		base: "aria-invalid:border-destructive inline-flex text-sm shrink-0 items-center justify-center rounded-lg gap-2 whitespace-nowrap font-medium outline-none transition-all disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 hover:cursor-pointer disabled:cursor-not-allowed",
 		variants: {
 			variant: {
 				default: "bg-primary text-black shadow-xs",
@@ -12,16 +12,16 @@
 					"bg-destructive shadow-xs hover:bg-destructive/90 dark:bg-destructive/60 text-white",
 				outline:
 					"bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:hover:bg-input/50 border",
-				secondary: "bg-secondary text-secondary-foreground shadow-xs border border-white/10 backdrop-blur-xl",
-				ghost: "hover:bg-secondary hover:text-secondary-foreground dark:hover:bg-secondary/50 border-transparent hover:border hover:border-white/10",
+				secondary: "bg-white/5 backdrop-blur-lg shadow-xs border border-white/10 backdrop-blur-xl",
+				ghost: "hover:bg-secondary hover:text-secondary-foreground dark:hover:bg-secondary/50",
 				link: "text-primary underline-offset-4 hover:underline",
-				icon: "bg-transparent",
+				icon: "bg-white/5 backdrop-blur-lg border border-white/10",
 			},
 			size: {
-				default: "px-6 py-2.5 has-[>svg]:px-3",
-				sm: "gap-1.5 px-6 py-1.5 has-[>svg]:px-2.5",
-				lg: "px-10 py-2.5 has-[>svg]:px-4",
-				icon: "size-9",
+				default: "px-8 py-2 has-[>svg]:px-3",
+				sm: "gap-1.5 px-6 py-1 has-[>svg]:px-2.5",
+				lg: "px-10 py-2 has-[>svg]:px-4",
+				icon: "p-4",
 			},
 		},
 		defaultVariants: {

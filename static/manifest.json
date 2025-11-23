@@ -1,0 +1,25 @@
+{
+  "name": "K9Crypt Status",
+  "short_name": "Status",
+  "description": "Real-time service status and incident history for K9Crypt services.",
+  "theme_color": "#0c0c0c",
+  "background_color": "#0c0c0c",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logos/k9crypt-rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/logos/k9crypt-rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

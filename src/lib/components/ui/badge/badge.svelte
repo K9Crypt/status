@@ -6,11 +6,11 @@
 		variants: {
 			variant: {
 				default:
-					"bg-primary/20 border-primary text-primary-foreground [a&]:hover:bg-primary/90 text-primary",
+					"bg-primary/20 border-primary text-primary",
 				secondary:
-					"bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 border-transparent",
+					"bg-white/5 backdrop-blur-lg border-white/10",
 				destructive:
-					"bg-destructive [a&]:hover:bg-destructive/90 dark:bg-destructive/70 border-transparent text-white",
+					"bg-red-500/20 border-red-500 text-red-500",
 				outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
 			},
 			size: {

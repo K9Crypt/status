@@ -5,6 +5,10 @@
 
 <slot></slot>
 
+<svelte:head>
+	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cutta" integrity="sha384-XENQ8/4Vlc/Ckgk5NQLQoiuYhrBpr+Mn9ByQ27a3EtrQEavMBAfW/YJ+zRpXQo6R" crossorigin="anonymous">
+</svelte:head>
+
 <style>
     :global(body) {
         justify-content: center;
@@ -40,4 +44,8 @@
 			);
 		background-size: 40px 40px;
     }
+
+	:global(h1) {
+		font-family: 'Cutta', sans-serif;
+	}
 </style>
